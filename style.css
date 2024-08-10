@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  /* background: #febf10; */
+  background: linear-gradient(to bottom right, #f226f2, #ffff00);
+
+  /* background: linear-gradient(to bottom right, #ff69b4, #ff8c00); */
+  /* background: linear-gradient(to bottom right, #800080, #ffb6c1); */
+  /* background: linear-gradient(to bottom right, #8b008b, #ffd700); */
+
+
+
+
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background:
+    radial-gradient(at 120% 50%, rgb(255, 0, 43) 5%, rgba(255, 255, 0, 0.025) 35%, #0a60b600 50%),
+    radial-gradient(at 12% -25%, #1c41f9 6px, rgba(255, 255, 0, 0.025) 30%, #0a60b600 10%),
+    radial-gradient(at 20% -70%, #afb4ff 30%, rgba(255, 255, 0, 0.025) 60%, #0a60b600 90%),
+
+    radial-gradient(at 30% 145%, rgb(255, 247, 0) 20%, rgb(211, 211, 11, 0) 55%, #fb020200 0%),
+    radial-gradient(at 25% 110%, rgb(255, 0, 21) 35%, rgb(211, 211, 11, 0) 60%, #fb020200 0%),
+    #fd0f9ad1;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  color: #000000;
+}
+
+.task-input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#taskName,
+#taskCategory,
+#taskDueDate,
+#addTaskButton {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  /* background: radial-gradient(circle at center, #f5f7fa, #c3cfe2); */
+  background: linear-gradient(to right, #ffffff, #8462fe81);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+button {
+  cursor: pointer;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button {
+  transition: transform 0.09s;
+}
+
+button:active {
+  transform: scale(0.93);
+}
